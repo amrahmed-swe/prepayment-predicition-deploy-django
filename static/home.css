@@ -1,0 +1,91 @@
+body {
+    /* background-color: #cbe0dd; */
+    background-image: linear-gradient(to right, #6190E8, #A7BFE8)
+}
+
+h1 {
+    /* font-family: "Sofia", sans-serif; */
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+    font-style: italic
+}
+
+form {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px 100px;
+}
+
+
+
+label {
+    font-family: "Trirong", serif;
+    padding-bottom: 2px;
+    /* font-family: 'fantasy'; */
+    display: block;
+    text-transform: capitalize;
+}
+
+input,
+select {
+    height: 40px;
+    width: 270px;
+    clear: both;
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 4px solid rgba(255, 64, 129, 0.36);
+    background-color: rgba(255, 64, 129, 0.15);
+}
+
+.options {
+    color: rgba(118, 35, 18, 0.979);
+    background: rgba(255, 64, 129, 0.15);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+select option[value="1"] {
+    background: rgba(100, 100, 100, 0.3);
+}
+
+select option[value="2"] {
+    background: rgba(150, 150, 150, 0.3);
+}
+
+select option[value="3"] {
+    background: rgba(200, 200, 200, 0.3);
+}
+
+select option[value="4"] {
+    background: rgba(250, 250, 250, 0.3);
+}
+
+::selection {
+    background-color: rgba(255, 64, 129, 0.15);
+}
+
+.submit {
+    width: 200px;
+    height: 45px;
+    border-radius: 999px;
+    background-color: #FF4081;
+    cursor: pointer;
+    box-shadow:
+        0 5px 5px -5px rgba(255, 64, 129, 0.15),
+        0 10px 10px -5px rgba(255, 64, 129, 0.15),
+        0 15px 15px -5px rgba(255, 64, 129, 0.15),
+        0 20px 20px -5px rgba(255, 64, 129, 0.15);
+    border-color: #FF4081;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 10px;
+    font-family: "Sofia", sans-serif;
+    font-size: 19px;
+
+    @media screen and (max-width: 700px) {
+        width: 25px;
+        height: 60px;
+        margin: 20px 0;
+    }
+}
