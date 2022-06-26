@@ -74,11 +74,11 @@ Deployment link: https://prepayment-prediction.herokuapp.com/
 
 **User Interface**
 
-![image](home-form.png)
+![image](/Screenshots/home-form.png)
 
 **Output:**
 
-![image](The result.png)
+![image](/Screenshots/result.png)
 
 **Conclusion:**
 
