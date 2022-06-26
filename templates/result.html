@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Result</title>
 </head>
 
@@ -19,11 +21,16 @@
         <h1>The Expected Result</h1>
     </div>
     <div class="container">
+        <div style="height: 50px">
+            <!-- <form>
+                <input type="button" value="Go back!" id="button" onclick="history.back()">
+            </form> -->
+            <a href="javascript:window.history.back();" style="height: 30px" class="previous round">
+                <i class="fa fa-arrow-circle-left" aria-hidden="true"> Go back</i>
+            </a>
+        </div>
         <div class="container-content">
-
             <div></div>
-            <div></div>
-
             <div class="result">
                 <h1>The Result with your information :</h1>
                 <div class="circle">
@@ -40,7 +47,6 @@
                     {% endif %}
                 </div>
             </div>
-
         </div>
     </div>
 </body>

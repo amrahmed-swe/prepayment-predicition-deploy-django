@@ -1,6 +1,6 @@
 body {
     /* background-image: linear-gradient(to right, #6190E8, #A7BFE8) */
-    background-color: #A7BFE8
+    background-color: #A7BFE8;
 }
 
 .header-page {
@@ -46,7 +46,7 @@ h1 {
 .result {
     width: 692px;
     border-left: 6px solid #FF4081;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, .4);
     display: grid;
     grid-template-columns: auto auto;
     text-align: center
@@ -94,6 +94,27 @@ h1 {
     font-size: 19px;
     color: rgba(4, 170, 109, 0.717);
     background-color: rgba(4, 170, 109, 0.258);
+}
 
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    align-items: center;
 
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+    align-items: center;
+}
+
+.round {
+    border-radius: 50%;
 }
