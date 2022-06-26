@@ -21,9 +21,8 @@
     <div class="container">
         <div class="container-content">
 
-            <div class="images">
-                <img src="{% static 'image\image-home.jpg' %}" alt="" sizes="" srcset="">
-            </div>
+            <div></div>
+            <div></div>
 
             <div class="result">
                 <h1>The Result with your information :</h1>
@@ -35,9 +34,9 @@
                 <div>
                     <h4 id="note">Note</h4>
                     {% if prediction == 1 %}
-                    <h5 id="danger_risk_description">No risk of prepayment.</h5>
+                    <h5 id="danger_risk_description">There is a risk of prepayment.</h5>
                     {% else %}
-                    <h5 id="no_risk_description">There is a risk of prepayment.</h5>
+                    <h5 id="no_risk_description">No risk of prepayment.</h5>
                     {% endif %}
                 </div>
             </div>

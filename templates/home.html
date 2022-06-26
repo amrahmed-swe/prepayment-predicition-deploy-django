@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Application Form</title>
 
     <style>
@@ -17,9 +18,67 @@
     </style>
 </head>
 
-<body style="background-image: linear-gradient(to right, #6190E8, #A7BFE8)">
+<body style="background-image: linear-gradient(to Left, #656972, #A7BFE8)">
     <div>
-        <h1>Application Form</h1>
+        <div>
+            <h1 style="display:inline-block">Application Form</h1>
+            <button id="myBtn">
+                <i class="fa fa-question-circle" style="padding-left:5px; color:#fff"> Help</i>
+            </button>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Information</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Some definitions of attributes to help you</p>
+                    <ul>
+                        <li>
+                            <span>CreditScore:</span> A number summarizing the creditworthiness of the borrower
+                        </li>
+                        <li>
+                            <span> MIP:</span> The percentage of loss coverage on the loan - Mortgage Insurance
+                            Percentage
+                        </li>
+                        <li>
+                            <span>Units:</span> shows whether the mortgage is a 1,2,3 or 4 unit property.
+                        </li>
+                        <li>
+                            <span>OCLTV:</span> Original Combined Loan to Value ratio.
+                        </li>
+                        <li>
+                            <span>DTI:</span> Debt to Income ratio.
+                        </li>
+                        <li>
+                            <span>OrigUPB:</span> The unpaid balance of the mortgage on the note date
+                        </li>
+                    </ul>
+                    and to see more, check pdf on Github
+                    <a href="https://github.com/amrahmed-swe/prepayment-predicition-deploy-django/blob/main/Blueprint.pdf"
+                        target="_blank">
+                        <i class="fa fa-github" style="margin-left:5px; color:black" aria-hidden="true">
+                            Blueprint
+                        </i>
+                    </a>
+                </div>
+                <div class="modal-footer">
+                    <h3>
+                        To more information Visit our Github
+                        <a href="https://github.com/amrahmed-swe/prepayment-predicition-deploy-django" target="_blank">
+                            <i class="fa fa-github" style="margin-left:5px; color:black" aria-hidden="true">
+                                Source Code
+                            </i>
+                        </a>
+                    </h3>
+                </div>
+            </div>
+
+        </div>
         <hr><br>
     </div>
 
@@ -40,7 +99,7 @@
 
         <div>
             <label for="">Marketing Services Agreement</label>
-            <input type="text" maxlength="5" pattern="\d{5}" id="MSA" name="MSA" required
+            <input type="text" maxlength="5" pattern="(\d{5}|X)" id="MSA" name="MSA" required
                 placeholder="5 digit number(X if not available)">
         </div>
 
@@ -271,6 +330,72 @@
         <div></div>
         <input class="submit" type="submit" value="Submit" />
     </form>
+
+    <footer>
+        <p>©2022 Developed using Django and Heroku by </p>
+        <div class="grid-container-element">
+            <div class="grid-child-element purple">
+                Amr Ahmed Ramadan
+                <a href="https://www.linkedin.com/in/amr-ahmed-ramadan/" target="_blank">
+                    <i class="fa fa-linkedin-square" size="45" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="grid-child-element purple">
+                Monika
+                <a href="https://" target="_blank">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="grid-child-element purple" style="border-right:0">
+                Rohit
+                <a href="http://" target="_blank">
+                    <i class="fa fa-linkedin-square" style="color:#0072b1" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="grid-child-element right-border-none"></div>
+
+            <div class="grid-child-element right-border-none">
+                <span style="color:black; font-size: .95em;">©Source Code</span>
+                <a href="https://github.com/amrahmed-swe/prepayment-predicition-deploy-django" target="_blank">
+                    <i class="fa fa-github" style="margin-left:5px; color:black" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="grid-child-element  right-border-none"></div>
+        </div>
+    </footer>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
 </body>
 
 </html>
