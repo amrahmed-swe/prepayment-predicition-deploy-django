@@ -1,5 +1,6 @@
 body {
-    background-image: linear-gradient(to right, #6190E8, #A7BFE8)
+    /* background-image: linear-gradient(to right, #6190E8, #A7BFE8) */
+    background-color: #A7BFE8
 }
 
 .header-page {
