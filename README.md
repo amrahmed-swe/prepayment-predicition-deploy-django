@@ -1,11 +1,16 @@
 <div id="top"></div>
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+![Python][python-shield]
+![Django][django-shield]
+![HTML5][html-shield]
+![CSS3][css-shield]
+![JavaScript][js-shield]
+![Heroku][heroku-shield]
+![NumPy][numpy-shield]
+![Pandas][pandas-shield]
+![scikit-learn][scikit-shield]
 [![LinkedIn][linkedin-shield]][linkedin-url]
+
 
 
 
@@ -19,7 +24,7 @@
   <h3 align="center">Prepayment-Prediction-Django</h3>
 
   <p align="center">
-    An awesome project, and it is an open source.
+    An awesome project, and it is an open source.<br/>
     Predicting Mortgage Backed Securities Prepayment Risk Using Machine Learning.
     <img src="https://user-images.githubusercontent.com/78646864/136017729-8b90fe01-9fdc-4840-8887-b271c266e51c.png" alt="Freddie Mac">
 </div>
@@ -44,9 +49,6 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -55,20 +57,30 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## About The Project :grinning:
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://prepayment-prediction-b.herokuapp.com/)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+### Definition :sparkles:
+<p>Mortgage-backed securities, called MBS, are bonds secured by home and other real estate loans. They are created when a number of these loans, usually with similar characteristics, are pooled together. As the borrowers gradually pay off the underlying mortgage loans, the investors receive payments of interest and principal.</p> 
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+### Problem Statement :point_down:
+</p>A large risk factor in MBS lies in the possibility of prepayments. Prepayments are payment by borrowers,who pay back a part, or the full amount of the loan earlier than discussed in their mortgage contract.<p>
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+<b>The Goal: :fire::fire:</b>
+* The aim of our project is to develop various Machine Learning models that could predict the prepayment risk of mortgage loans<br/>
 
-Use the `BLANK_README.md` to get started.
+<b>By using machine learning techniques:</b>
+* Random Forest :herb::fire:
+* Logistic Regression :v:
+* Support Vector Machine (SVM) :skull:
+
+### Dataset :house_with_garden:
+
+We use Freddie Mac’s home loans dataset. This dataset contains 291452 rows which represent the number of mortgages/ data points and 28 columns representing different features of the data.
+you can check a description for each feature in [Blueprint](https://github.com/amrsss/prepayment-predicition-deploy-django/blob/main/Blueprint.pdf). Download :point_left:
+
+Use the `README.md` as documentation to get started.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -76,51 +88,66 @@ Use the `BLANK_README.md` to get started.
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+List of major frameworks/libraries used to bootstrap project. Here are a examples.
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [Python](https://www.python.org/)
+* [scikit-learn](https://reactjs.org/)
+* [Seaborn](https://seaborn.pydata.org/)
+* [Django](https://www.djangoproject.com/)
+* [Heroku](https://dashboard.heroku.com/)
+* Others (Scroll down to installation)
+
+### Model Used:
+This is a Classification problem so we use Random Forest Classifier and Linear Support Vector Classifier for Model Building.
+#### Training and Testing dataset
+Split dataset into 80 % for Training and 20% for testing
+
+##### We achieve 100% accuracy in both the models which indicates data leakage. This is due to sub duplicates in the dataset which cannot be solved unless we change the entire dataset.
+
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Getting Started :rocket:
+Follow these instructions on setting up project locally.
+To get a local copy up and running follow these simple steps.
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+### Prerequisites :sparkles:
 
-### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+* [Download Python](https://www.python.org/downloads/)
+* Verify **python3** is installed
   ```sh
-  npm install npm@latest -g
+   python3 --version
+  ```
+* Check PIP Installed
+  ```sh
+    pip --version
   ```
 
-### Installation
+### Installation :collision:
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+_instruction for installing and setting up your app._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/amrsss/prepayment-predicition-deploy-django.git
    ```
-3. Install NPM packages
+2. Creating a virtual environment [option] 
    ```sh
-   npm install
+   py -m venv env
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+3. Activate your virtual environment [if you create venv]
+   ```sh
+   nameyourenvironment\Scripts\Activate.ps1
+   ```
+
+4. install requirements
+   ```sh
+   pip install requirements.txt
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -128,101 +155,74 @@ _Below is an example of how you can instruct your audience on installing and set
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Usage :star::boom:
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+### Home Page
+<img src="Screenshots\home-form.png" alt="home-interface" >
+
+### Help Button
+<img src="Screenshots\help.png" alt="Help" >
+
+### Result Page
+<img src="Screenshots\result.png" alt="result" >
+
+<!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- CONTACT -->
-## Contact
+## Contact :hand::bell:
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+<!-- [@AmrSiri][tweeter-shield] -->
+Tweeter:
+   [![Tweeter][tweeter-shield]][tweeter-url]
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link:
+   [![GitHub][project-shield]][project-url]
 
+App Link: 
+   [![APP][app-shield]][app-url]
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+## Acknowledgments :gift_heart::gift:
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+* [README](https://github.com/othneildrew) (Othneil Drew)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[contributors-url]: https://github.com/amrsss/prepayment-predicition-deploy-django/graphs/contributors
+[forks-shield]: https://img.shields.io/badge/coverage-80%25-yellowgreen
+[forks-url]: https://github.com/amrsss/prepayment-predicition-deploy-django/network/members
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[stars-url]: https://github.com/amrsss/prepayment-predicition-deploy-django/stargazers
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[issues-url]: https://github.com/amrahmed-swe/prepayment-predicition-deploy-django/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+[linkedin-url]: https://www.linkedin.com/in/amr-ahmed-ramadan/
+<!-- Languages-->
+[python-shield]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
+[django-shield]: https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white
+[html-shield]: https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white
+[css-shield]: https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white
+[js-shield]:https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E
+[numpy-shield]: https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white
+[pandas-shield]:https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white
+[scikit-shield]: https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white
+[heroku-shield]: https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white
+[tweeter-shield]: https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FAmrSiri
+[tweeter-url]: https://twitter.com/AmrSiri
+[project-shield]: https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white
+[project-url]: https://github.com/amrsss/prepayment-predicition-deploy-django
+[app-shield]: https://img.shields.io/badge/APP-app%20link-orange
+[app-url]: https://prepayment-prediction-b.herokuapp.com/
+[product-screenshot]: Screenshots/home-form.png
