@@ -67,6 +67,7 @@ select option[value="4"] {
     text-transform: uppercase
 }
 
+
 .submit {
     width: 200px;
     height: 45px;
@@ -241,4 +242,10 @@ i {
     padding: 2px 16px;
     background-color: rgba(255, 64, 129, 0.35);
     color: white;
+}
+
+span.astrick {
+    color: red;
+    font-size: large;
+    font-weight: 500;
 }
