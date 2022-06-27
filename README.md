@@ -13,7 +13,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/amrahmed-swe/prepayment-predicition-deploy-django">
-    <img src="LoanDjango\static\image\logo.png" alt="Logo" width="80" height="80">
+    <img src="static\image\logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Prepayment-Prediction-Django</h3>
