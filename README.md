@@ -154,18 +154,18 @@ _instruction for installing and setting up your app._
 
 
 
-<!-- USAGE EXAMPLES -->
+<!-- USAGE -->
 ## Usage :star::boom:
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+###Screenshots
 
-### Home Page
+#### Home Page
 <img src="Screenshots\home-form.png" alt="home-interface" >
 
-### Help Button
+#### Help Button
 <img src="Screenshots\help.png" alt="Help" >
 
-### Result Page
+#### Result Page
 <img src="Screenshots\result.png" alt="result" >
 
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
