@@ -74,15 +74,18 @@ h1 {
 
 }
 
-#note {
-    color: red;
+.note-info {
+    background-color: #e7f3fe;
+    color: #2196F3;
+    border-left: 6px solid #2196F3;
+    /* color: red; */
     font-weight: bold;
     font-style: italic;
     font-size: 22px;
     display: inline;
     width: 100%;
-
 }
+
 
 #danger_risk_description {
     font-size: 19px;
@@ -117,10 +120,4 @@ a:hover {
 
 .round {
     border-radius: 50%;
-}
-
-.note-info {
-    background-color: #e7f3fe;
-    color: #2196F3;
-    border-left: 6px solid #2196F3;
 }
