@@ -81,9 +81,10 @@ h1 {
     /* color: red; */
     font-weight: bold;
     font-style: italic;
-    font-size: 22px;
+    font-size: 23px;
     display: inline;
     width: 100%;
+    padding-left: 4px;
 }
 
 
