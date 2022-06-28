@@ -177,13 +177,14 @@ _instruction for installing and setting up your app._
 ## Contact :hand::bell:
 
 <!-- [@AmrSiri][tweeter-shield] -->
-Tweeter:
-   [![Tweeter][tweeter-shield]][tweeter-url]
+Socials:
+   <!-- [![Tweeter][tweeter-shield]][tweeter-url] -->
+<p align="left"> <a href="https://twitter.com/AmrSiri" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="amr ahmed(swe)" height="30" width="40" /></a> <a href="https://www.linkedin.com/in/amr-ahmed-ramadan/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="amr ahmed" height="30" width="40" /></a> <a href="https://www.kaggle.com/amrmoro" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="amr ahmed ramadan" height="30" width="40" /></a> <a href="https://www.facebook.com/cvbnm1234568/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="amr ahmed" height="30" width="40" /></a> </p>
 
-Project Link:
+Project Link:</br>
    [![GitHub][project-shield]][project-url]
 
-App Link: 
+App Link:</br> 
    [![APP][app-shield]][app-url]
 <p align="right">(<a href="#top">back to top</a>)</p>
 
